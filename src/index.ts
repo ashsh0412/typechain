@@ -37,7 +37,7 @@ class BlockChain {
         this.blocks.push(newBlock);
     }
     public getBlocks() {
-        return [...this.blocks];
+        return JSON.parse(JSON.stringify([this.blocks]));
     }
 }
 
